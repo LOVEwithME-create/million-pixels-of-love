@@ -1,0 +1,29 @@
+
+body {
+    background-color: #000;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.heart {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.footer {
+    margin-top: 40px;
+    font-size: 14px;
+    opacity: 0.7;
+}
