@@ -1,32 +1,134 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Million Pixels Auction</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
-        header { background: #222; color: white; padding: 20px; text-align: center; }
-        .content { padding: 40px; text-align: center; }
-        .grid { display: grid; grid-template-columns: repeat(10, 1fr); gap: 2px; max-width: 500px; margin: 20px auto; }
-        .pixel { width: 50px; height: 50px; background: #ddd; border: 1px solid #aaa; }
-        footer { text-align: center; padding: 20px; background: #222; color: white; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Million Pixels of Love — Andrii Korotkyi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #0e0e0e;
+      color: #fff;
+    }
+    header {
+      background: #1a1a1a;
+      padding: 1.5rem;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #ff4171;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #111;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: #eee;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ff4171;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+      background-image: linear-gradient(145deg, #111, #1e1e1e);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-family: 'Playfair Display', serif;
+      color: #ff4171;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .featured-art {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 3rem 2rem;
+      background-color: #181818;
+    }
+    .art-card {
+      background-color: #222;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(255, 65, 113, 0.2);
+      max-width: 300px;
+      text-align: center;
+    }
+    .art-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .art-card h3 {
+      padding: 1rem;
+      color: #fff;
+      font-size: 1.2rem;
+    }
+    .art-card p {
+      padding: 0 1rem 1rem;
+      font-size: 0.95rem;
+      color: #bbb;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      background-color: #111;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Million Pixels of Love</h1>
-        <p>Art Auction Coming Soon...</p>
-    </header>
-    <div class="content">
-        <p>Stay tuned. The auction is being prepared. Some artworks will appear here soon.</p>
-        <div class="grid">
-            <!-- Simple pixel grid placeholder -->
-            <div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div><div class="pixel"></div>
-        </div>
+  <header>Million Pixels of Love</header>
+  <nav>
+    <a href="#story">My Story</a>
+    <a href="#art">Art Time</a>
+    <a href="#media">Show Art & Music</a>
+    <a href="#game">Art Game</a>
+    <a href="#collect">Collectibles</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Every pixel is a heartbeat.</h1>
+    <p>Every painting — a love confession. Dive into a universe of emotion, color, and meaning through the eyes of Andrii Korotkyi.</p>
+  </section>
+
+  <section class="featured-art" id="art">
+    <div class="art-card">
+      <img src="painting1.jpg" alt="Messenger of Love">
+      <h3>Messenger of Love</h3>
+      <p>A dreamy figure in crimson carrying a fragile secret across dimensions of memory.</p>
     </div>
-    <footer>
-        &copy; 2025 Million Pixels of Love
-    </footer>
+    <div class="art-card">
+      <img src="painting2.jpg" alt="Take-Off of Risk">
+      <h3>Take-Off of Risk</h3>
+      <p>Explosion of courage painted in amber and night — where danger meets desire.</p>
+    </div>
+    <div class="art-card">
+      <img src="painting3.jpg" alt="Lonesome Heart">
+      <h3>Lonesome Heart</h3>
+      <p>A visual echo of longing, painted in layers of dusk and soft silence.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Andrii Korotkyi. All rights reserved.
+  </footer>
 </body>
 </html>
